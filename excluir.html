@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M2</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="cadastrar.html">CADASTRAR</a></li>
+                    <li><a href="update.html">ATUALIZAR<a></li>
+                    <li class="active">EXCLUIR</li>
+                    <li><a href="calcular.html">CALCULAR<a></li>
+                    <li><a href="consultar.php">CONSULTAR<a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+ 
+        <form action="BD/Excluir.php" method="POST">
+            <h2>Excluir</h2>
+            <div class="form-container">
+                <label>
+                    Digite a placa do caminhão que deseja excluir:
+                    <input type="text" name="placa" placeholder="Digite aqui...">
+                </label>
+               
+                <button type="submit">Excluir</button>
+            </div>
+        </form>
+    </body>
+</html>

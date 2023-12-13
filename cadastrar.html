@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M2</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active">CADASTRAR</li>
+                    <li><a href="update.html">ATUALIZAR<a></li>
+                    <li><a href="excluir.html">EXCLUIR<a></li>
+                    <li><a href="calcular.html">CALCULAR<a></li>
+                    <li><a href="consultar.php">CONSULTAR<a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="BD/inserir.php" method="POST">
+            <h2>Cadastro de Veiculos</h2>
+            <div class="form-container"> 
+                <label>
+                    Nome do motorista:
+                    <input type="text" name="nome">
+                </label>
+
+                <label>
+                    Placa do veiculo:
+                    <input type="text" name="placa">
+                </label>
+
+                <label>
+                    Ano de fabricação:
+                    <input type="text" name="anoF">
+                </label>
+
+                <label>
+                    Modelo do veiculo:
+                    <input type="text" name="modelo">
+                </label>
+
+                <label>
+                    Valor da diaria:
+                    <input type="number" name="diaria">
+                </label>
+                
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </body>
+</html>
